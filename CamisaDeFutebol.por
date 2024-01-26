@@ -7,10 +7,10 @@ programa
 		inteiro camisa = 0
 		escreva("Bem vindo à partida de futebol, escolha sua camisa! Você só não pode escolher a camisa 10! \n")
 		leia(camisa)
-		se(!(camisa == 10 ou camisa < 0 ou camisa > 11) {
-			escreva("Opa! Parece que você não escolheu uma camisa válida! Escolha outra...")
+		se( nao(camisa == 10)) {
+			escreva("Okay! Podemos jogar assim!")
 		} senao {
-			escreva("Okay! Podemos jogar assim!)
+			escreva("Infelizmente dessa maneira o jogo não pode continuar! :(")
 		}
 	}
 }
